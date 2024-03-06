@@ -26,6 +26,17 @@ https://github.com/LondheShubham153/kubestarter/blob/main/kubeadm_installation.m
 ````
 ### These instructions are for Kubernetes 1.29.
 
+Install Docker first
+
+```
+# using 'sudo su' is not a good practice.
+sudo apt update
+sudo apt-get install -y apt-transport-https ca-certificates curl
+sudo apt install docker.io -y
+
+sudo systemctl enable --now docker # enable and start in single command.
+```
+
 1.Update the apt package index and install packages needed to use the Kubernetes apt repository:
 ```
 sudo apt-get update
