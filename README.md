@@ -19,6 +19,12 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 ````
+```````````
+##worker node
+sudo systemctl restart kubelet
+sudo systemctl status kubelet
+
+````````````
 ### These instructions are for Kubernetes 1.29.
 
 Install Docker first
